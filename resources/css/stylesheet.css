@@ -1,0 +1,36 @@
+/* Header*/
+
+header {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height:64px;
+    position: fixed;
+    width:100%;
+}
+
+.logo {
+    display:flex;
+    align-items: center;
+    height:32px;
+    margin-left: 24px;
+}
+
+.logo p {
+    font-size: 32px;
+}
+
+.logo span {
+color:gray;
+}
+
+.nav {
+    display:flex;
+    list-style-type: none;
+    margin-right:24px;
+}
+
+.nav li {
+    margin: auto 16px;
+    font-size: 22px;
+}
