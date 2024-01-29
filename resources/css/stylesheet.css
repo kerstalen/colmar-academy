@@ -1,10 +1,30 @@
 
 h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color:darkslategray;
+    margin: 24px 0;
+}
+
+h3 {
     font-size: 32px;
     font-weight: bold;
     color:darkslategray;
+    margin: 8px 0;
 }
 
+p {
+    font-size: 22px;
+    color: lightslategray;
+    margin: 8px 0;
+
+
+}
+
+a {
+    font-size: 20px;
+    color:darkslategray;
+}
 
 /* Header*/
 
@@ -16,6 +36,7 @@ header {
     position: fixed;
     top:0;
     width:100%;
+    background-color: white;
 }
 
 .logo {
@@ -27,6 +48,7 @@ header {
 
 .logo p {
     font-size: 32px;
+    color:darkslategray;
 }
 
 .logo span {
@@ -68,7 +90,6 @@ color:gray;
     width:100%;
 }
 
-
 .banner-text {
     display:flex;
     flex-direction: column;
@@ -78,7 +99,7 @@ color:gray;
 .banner-text p {
     color:darkslategray;
     font-weight: bold;
-    font-size:22px;
+    font-size:26px;
 }
 
 .button {
@@ -87,4 +108,60 @@ color:gray;
     background-color: darkslategray;
     text-align: center;
     padding: 8px;
+    margin:10px 0;
+}
+
+/* Information section */
+
+.information {
+    display:flex;
+}
+
+.information-left {
+    display:flex;
+    flex-direction: column;
+    width:60%;
+    margin: 32px 24px;
+}
+
+.information-left-image {
+    display:flex;
+    flex-direction: column;
+}
+
+.information-left-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.information-left-text h2 {
+    margin-top:32px;
+}
+
+.information-right {
+    width:40%;
+    margin-top: 16px;
+    margin-bottom:16px;
+    margin-right:32px;
+}
+
+.information-bloc {
+    display: flex;
+    padding:16px;
+}
+
+.information-bloc-text {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width:65%;
+    padding:16px;
+}
+
+.information-bloc-image {
+    width:35%;
+}
+
+.information-bloc-image img {
+    width:100%;
 }
