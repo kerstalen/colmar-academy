@@ -165,3 +165,49 @@ color:gray;
 .information-bloc-image img {
     width:100%;
 }
+
+/* Learning section */
+
+.learning {
+    display:flex;
+    flex-direction:column;
+    background-color:lightgray;
+}
+
+.learning-title {
+    text-align:center;
+}
+
+.learning-title h2 {
+    margin-top: 32px;
+    margin-bottom:0;
+}
+
+
+.learning-grid {
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    margin: 0 56px;
+   
+}
+
+.learning-bloc {
+    width:30%;
+    margin:32px 16px;
+    background-color:white;
+}
+
+.learning-image {
+    display:flex;
+    flex-direction:column;
+}
+
+.learning-text{
+    padding-bottom:24px;
+    margin-left:16px;
+}
+
+.learning-text h3{
+  margin-top:16px;
+}
