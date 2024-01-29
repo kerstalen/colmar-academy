@@ -347,6 +347,7 @@ footer {
 
 @media screen and (min-width:480px) and (max-width:1200px) {
 
+
 h2 {
     font-size: 36px;
     font-weight: bold;
@@ -366,6 +367,7 @@ p {
     color: lightslategray;
     margin: 8px 0;
 
+
 }
 
 a {
@@ -374,7 +376,7 @@ a {
 
 /* Header*/
 
-header {
+.header-desktop {
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -385,6 +387,10 @@ header {
     background-color: white;
 }
 
+.header-mobile {
+    display:none;
+}
+
 .logo {
     display:flex;
     align-items: center;
@@ -393,7 +399,7 @@ header {
 }
 
 .logo p {
-    font-size: 32px;
+    font-size: 24px;
     color:darkslategray;
 }
 
@@ -401,18 +407,22 @@ header {
 color:gray;
 }
 
-.nav {
+.nav-desktop {
     display:flex;
     list-style-type: none;
     margin-right:24px;
 }
 
-.nav li {
-    margin: auto 16px;
-    font-size: 22px;
+.nav-mobile {
+    display:none;
 }
 
-.nav li a {
+.nav-desktop li {
+    margin: auto 16px;
+    font-size: 18px;
+}
+
+.nav-desktop li a {
    text-decoration: none;
 }
 
@@ -433,8 +443,7 @@ color:gray;
 }
 
 .banner-image {
-    width:60%;
-    margin-right:24px;
+    width:100%;
 }
 
 .banner-image img {
@@ -479,12 +488,14 @@ color:gray;
 
 .information {
     display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .information-left {
     display:flex;
     flex-direction: column;
-    width:60%;
+    width:100%;
     margin: 32px 24px;
 }
 
@@ -503,16 +514,16 @@ color:gray;
 }
 
 .information-right {
-    width:40%;
-    margin-top: 16px;
-    margin-bottom:16px;
-    margin-right:32px;
+    display:flex;
+    justify-content:space-around;
+    margin: 16px 32px;;
 }
 
 .information-bloc {
     display: flex;
+    flex-direction:column;
     align-items:center;
-    padding:0;
+    width:30%;
 }
 
 .information-bloc:hover {
@@ -523,13 +534,9 @@ color:gray;
     display:flex;
     flex-direction: column;
     justify-content: center;
-    width:65%;
     padding:16px;
 }
 
-.information-bloc-image {
-    width:35%;
-}
 
 .information-bloc-image img {
     width:100%;
@@ -599,6 +606,7 @@ color:gray;
 
 .thesis-left-right {
     display:flex;
+    flex-wrap:wrap;
     justify-content: center;
 }
 
@@ -612,7 +620,7 @@ color:gray;
 }
 
 .thesis-left {
-    width:60%;
+    width:100%;
     margin: 32px 24px;
 }
 
@@ -625,7 +633,7 @@ color:gray;
 }
 
 .thesis-right {
-    width:40%;
+    width:100%;
     margin: 32px 24px;
 }
 
@@ -676,6 +684,7 @@ footer {
     text-decoration: none;
     margin-right: 8px;
 }
+
 }
 
 
@@ -955,4 +964,5 @@ footer {
     .footer-menu {
         display:none;
     }
+}
     
